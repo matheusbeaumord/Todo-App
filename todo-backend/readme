@@ -1,0 +1,15 @@
+Projeto:
+
+Faça um sistema para gerenciamento de "tarefas a fazer (ticket)" com as seguintes características:
+- Tela com listagem de todos tickets com filtro por: Aberto, concluído e deletado
+- Permitir editar o ticket
+- Permitir finalizar o ticket
+- Permitir Deletar o ticket
+- As informações com a data de criação, edição ou finalização devem estar visíveis
+- Deve ser feito usando Nodejs, Vue e MongoDB
+- Template e frameworks CSS pode ser usado aquele que preferir
+- Testes unitários não é obrigatório mas são um diferencial
+- O código deve ser disponibilizado em um repositório, github, bitbucket, etc
+- O projeto deve ser monorepo, ou seja, backend e front no mesmo repositório
+- Todas as dependências devem ser listadas no package.json
+- Deve conter um arquivo readme.md com as informações sobre como rodar a aplicação
