@@ -19,7 +19,7 @@ export default function TodoList(props) {
         <div className="col-md-4">
           <button
             type="button"
-            className={`${filter === 'todo' ? 'btn btn-success btn-block mt-1': 'btn btn-info btn-block mt-1 '}`}
+            className='btn btn-info btn-block mt-1'
             onClick={() => updateTodosToShow("todo")}
           >
             To Do
