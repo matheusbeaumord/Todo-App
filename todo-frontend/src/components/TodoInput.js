@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function TodoInput(props) {
   const { todo, handleChange, handleSubmit, updateTask, edit } = props;
@@ -25,12 +25,14 @@ export default function TodoInput(props) {
 
           <button
             type="submit"
-            className={`btn btn-block mt-3 ${edit ? 'btn-success' : 'btn-info'}`}
+            className={`btn btn-block mt-3 ${
+              edit ? "btn-success" : "btn-info"
+            }`}
           >
-            {edit ? 'Edit task' : 'Add new task'}
+            {edit ? "Edit task" : "Add new task"}
           </button>
         </form>
       </div>
     </div>
-  )
+  );
 }
