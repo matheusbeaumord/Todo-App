@@ -1,4 +1,4 @@
-# Boas vindos e bem vindas ao Todo-App!
+# Bem vindos e bem vindas ao Todo-App!
 
 Essa aplicação foi criada com o intuito de gerenciar tarefas do dia a dia utilizando o sistema CRUD.
 
