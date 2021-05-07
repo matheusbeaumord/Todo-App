@@ -15,6 +15,7 @@ export default function TodoInput(props) {
             </div>
 
             <input
+              data-testid="todo-imput"
               type="text"
               className="form-control"
               placeholder="New Todo"
@@ -24,6 +25,7 @@ export default function TodoInput(props) {
           </div>
 
           <button
+            data-testid="todo-submit"
             type="submit"
             className={`btn btn-block mt-3 ${
               edit ? "btn-success" : "btn-info"

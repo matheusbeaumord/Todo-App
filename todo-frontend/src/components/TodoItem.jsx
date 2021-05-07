@@ -22,7 +22,7 @@ export default function TodoItem(props) {
             onClick={doneTask}
           >
             <i
-              className={`${completed === true ? 'far fa-check-square' : 'far fa-square'} ${deleted === true ? 'deleted-task' : ''}`}
+              className={`${completed === true ? ' fas fa-check ' : 'fas fa-check'} ${deleted === true ? 'deleted-task' : ''}`}
             />
           </span>
           <span

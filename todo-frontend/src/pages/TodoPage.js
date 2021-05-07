@@ -32,9 +32,14 @@ function TodoPage() {
 
   const getAllTasks = async () => {
     const listTodos = await getAllTodos();
-    setTodos(listTodos.filter((item) => !item.completed && !item.deleted));
+    const result = listTodos.filter((item) => !item.completed && !item.deleted);
     setItems(listTodos);
+    setTodos(result);
   };
+
+  useEffect(() => {
+    getAllTasks();
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -62,10 +67,12 @@ function TodoPage() {
         deleted: false,
         date: newDate,
       });
+      setFilter("todo");
       getAllTasks();
       return completedTrue;
     }
     await updateTodo(_id, { task: task, deleted: true, date: newDate });
+    setFilter("todo");
     getAllTasks();
   };
 
@@ -85,10 +92,13 @@ function TodoPage() {
   };
 
   const excludeTasks = async (e) => {
-    e.preventDefault();
-    await removeTasks();
-    setFilter("");
-    getAllTasks();
+    const r = window.confirm("Are you sure?");
+    if (r === true) {
+      e.preventDefault();
+      await removeTasks();
+      setFilter("todo");
+      getAllTasks();
+    }
   };
 
   const doneTask = async (e, id) => {
@@ -102,10 +112,12 @@ function TodoPage() {
         completed: false,
         date: newDate,
       });
+      setFilter("todo");
       getAllTasks();
       return completedTrue;
     }
     await updateTodo(_id, { task: task, completed: true, date: newDate });
+    setFilter("todo");
     getAllTasks();
   };
 
@@ -116,7 +128,6 @@ function TodoPage() {
         setFilter(value);
         break;
       case "done":
-        // setTodos(result)
         setTodos(items.filter((item) => item.completed));
         setFilter(value);
         break;
@@ -130,10 +141,6 @@ function TodoPage() {
   };
 
   const handleChange = ({ target }) => setTodo(target.value);
-
-  useEffect(() => {
-    getAllTasks();
-  }, []);
 
   return (
     <div className="container">

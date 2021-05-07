@@ -15,29 +15,43 @@ export default function TodoList(props) {
 
   return (
     <div>
-      <div className="row">
-        <div className="col-md-4">
+      <div className="">
+        <div className="nav nav-tabs" id="nav-tab" role="tablist">
           <button
+            className={`nav-link ${filter === 'todo' ? 'active' : ''}`}
+            id="nav-home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-home"
             type="button"
-            className='btn btn-info btn-block mt-1'
+            role="tab"
+            aria-controls="nav-home"
+            aria-selected="true"
             onClick={() => updateTodosToShow("todo")}
           >
             To Do
           </button>
-        </div>
-        <div className="col-md-4">
           <button
+            className={`nav-link ${filter === 'done' ? 'active' : ''}`}
+            id="nav-profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-profile"
             type="button"
-            className="btn btn-info btn-block mt-1"
+            role="tab"
+            aria-controls="nav-profile"
+            aria-selected="false"
             onClick={() => updateTodosToShow("done")}
           >
             Done
           </button>
-        </div>
-        <div className="col-md-4">
           <button
+            className={`nav-link ${filter === 'deleted' ? 'active' : ''}`}
+            id="nav-contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-contact"
             type="button"
-            className="btn btn-info btn-block mt-1"
+            role="tab"
+            aria-controls="nav-contact"
+            aria-selected="false"
             onClick={() => updateTodosToShow("deleted")}
           >
             Deleted
@@ -73,6 +87,7 @@ export default function TodoList(props) {
                 onClick={excludeTasks}
               >
                 Exclude Deleleted tasks
+
               </button>
             </div>
           )}
