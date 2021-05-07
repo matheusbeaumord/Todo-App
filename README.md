@@ -13,7 +13,7 @@ U: Update (atualizar) - atualizar os dados do registro
 D: Delete (apagar) - apagar um registro
 
 ### Vídeo
-	- Clique na imagem e você será redirecionado para o youtube.com onde poderá ver a aplicação funcionando 
+  - Clique na imagem e você será redirecionado para o youtube.com onde poderá ver a aplicação funcionando 
 [![Clicando na imagem você será redirecionado para o youtube](https://res.cloudinary.com/dv6kodq2o/image/upload/v1620402239/Todo-App/Todo-App_brgevm.png)](https://www.youtube.com/watch?v=j68HLh1pLGo)
 
 
