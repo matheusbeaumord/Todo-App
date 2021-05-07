@@ -12,8 +12,7 @@ U: Update (atualizar) - atualizar os dados do registro
 
 D: Delete (apagar) - apagar um registro
 
-[![Alt text](https://res.cloudinary.com/dv6kodq2o/video/upload/v1620401226/Todo-App/Screencast_2021-05-07_12_09_11_amr9gx.mp4)](https://www.youtube.com/watch?v=j68HLh1pLGo)
-![Aplicação](https://www.youtube.com/watch?v=j68HLh1pLGo)
+[![](https://res.cloudinary.com/dv6kodq2o/image/upload/v1620402239/Todo-App/Todo-App_brgevm.png)](https://www.youtube.com/watch?v=j68HLh1pLGo)
 
 
 # Project Setup
