@@ -29,10 +29,9 @@ D: Delete (apagar) - apagar um registro
 3ª – Front-end:
 - Acesse o diretório todo-frontend
 - Execute o comando em seu terminal: `npm install`
-	npm é um gerenciador de pacotes para a linguagem de programação JavaScript
+npm é um gerenciador de pacotes para a linguagem de programação JavaScript
 - Em seguida, execute o comando: `npm start`
-	Isso fará com que abra em seu terminal uma pagina com a seguinte URL
-	`http://localhost:3000`
+Isso fará com que abra em seu terminal uma pagina com a seguinte URL `http://localhost:3000`
 
 # PRONTO! 
 
