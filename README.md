@@ -1,5 +1,7 @@
 # Bem vindos e bem vindas ao Todo-App!
 
+## O To-Do List oferece a confiança de que tudo está organizado e programado para que você possa progredir nas coisas que são importantes para você.
+
 Essa aplicação foi criada com o intuito de gerenciar tarefas do dia a dia utilizando o sistema CRUD.
 
 C: Create (criar) - criar um novo registro
