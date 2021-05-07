@@ -19,20 +19,23 @@ D: Delete (apagar) - apagar um registro
 
 # Rodando a aplicação
 
-1º – Banco de dados MongoDB
+1º – Clone esse repositório
+- Para isso, você pode executar o comando em seu terminal: `git clone https://github.com/matheusbeaumord/Todo-App.git`.
+
+2º – Banco de dados MongoDB
 - Certifique-se que o serviço do MongoDB esteja a ativo.
 
-2º – Back-end
+3º – Back-end
 - Acesse o diretório todo-backend
 - Execute o comando em seu terminal: `npm rum server`
 
-3ª – Front-end:
+4ª – Front-end:
 - Acesse o diretório todo-frontend
 - Execute o comando em seu terminal: `npm install`
-  - npm é um gerenciador de pacotes para a linguagem de programação JavaScript
+	- npm é um gerenciador de pacotes para a linguagem de programação JavaScript
 - Em seguida, execute o comando: `npm start`
-  - Isso fará com que abra em seu terminal uma pagina com a seguinte URL `http://localhost:3000`
+	- Isso fará com que abra em seu terminal uma pagina com a seguinte URL `http://localhost:3000`
 
 # PRONTO! 
 
-### Agora você pode gerenciar suas tarefas por aqui! 
+### Agora você pode gerenciar suas tarefas por aqui!
