@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import TodoList from "../components/TodoList";
 import TodoInput from "../components/TodoInput";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import {
   getAllTodos,
@@ -17,6 +19,28 @@ function TodoPage() {
   const [id, setId] = useState(false);
   const [items, setItems] = useState([]);
   const [filter, setFilter] = useState("");
+
+  const notifyDone = () =>
+    toast("✅ Checked Done!", {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
+  const notifyDelete = () =>
+    toast("🗑️ Checked Delete!", {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
 
   const data = new Date();
   const newDate =
@@ -68,11 +92,13 @@ function TodoPage() {
         date: newDate,
       });
       setFilter("todo");
+      notifyDelete();
       getAllTasks();
       return completedTrue;
     }
     await updateTodo(_id, { task: task, deleted: true, date: newDate });
     setFilter("todo");
+    notifyDelete();
     getAllTasks();
   };
 
@@ -113,11 +139,13 @@ function TodoPage() {
         date: newDate,
       });
       setFilter("todo");
+      notifyDone();
       getAllTasks();
       return completedTrue;
     }
     await updateTodo(_id, { task: task, completed: true, date: newDate });
     setFilter("todo");
+    notifyDone();
     getAllTasks();
   };
 
@@ -163,6 +191,17 @@ function TodoPage() {
             doneTask={doneTask}
             updateTodosToShow={updateTodosToShow}
             filter={filter}
+          />
+          <ToastContainer
+            position="top-right"
+            autoClose={2000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
           />
         </div>
       </div>
