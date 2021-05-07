@@ -12,7 +12,7 @@ U: Update (atualizar) - atualizar os dados do registro
 
 D: Delete (apagar) - apagar um registro
 
-![Aplicação](https://res.cloudinary.com/dv6kodq2o/image/upload/v1620399289/Todo-App/Todo-App_vfgrid.png)
+![Aplicação](https://res.cloudinary.com/dv6kodq2o/video/upload/v1620401226/Todo-App/Screencast_2021-05-07_12_09_11_amr9gx.mp4)
 
 
 # Project Setup
