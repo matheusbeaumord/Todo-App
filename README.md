@@ -10,6 +10,8 @@ U: Update (atualizar) - atualizar os dados do registro
 
 D: Delete (apagar) - apagar um registro
 
+![Aplicação](https://res.cloudinary.com/dv6kodq2o/image/upload/v1620391715/sample.jpg)
+
 
 # Project Setup
 
