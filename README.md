@@ -32,7 +32,7 @@ D: Delete (apagar) - apagar um registro
 
 3º – Back-end
 - Acesse o diretório todo-backend
-- Execute o comando em seu terminal: `npm rum server`
+- Execute o comando em seu terminal: `npm run server`
 
 4ª – Front-end:
 - Acesse o diretório todo-frontend
